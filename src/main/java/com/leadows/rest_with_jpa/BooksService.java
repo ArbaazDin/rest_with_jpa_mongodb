@@ -19,11 +19,11 @@ public class BooksService {
         repository.save(book);
     }
      
-    public Books get(Long id) {
+    public Books get(String id) {
         return repository.findById(id).get();
     }
      
-    public void delete(Long id) {
+    public void delete(String id) {
         repository.deleteById(id);
     }
 }
